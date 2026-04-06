@@ -10,19 +10,19 @@ API for Markdown Notes app.
 Run the following command to install the package and automatically add the dependency to your composer.json file:
 
 ```bash
-composer require "tucker-and-nielsen-plc/colorado-booth-sdk:1.0.2"
+composer require "tucker-and-nielsen-plc/colorado-booth-sdk:1.0.3"
 ```
 
 Or add it to the composer.json file manually as given below:
 
 ```json
 "require": {
-    "tucker-and-nielsen-plc/colorado-booth-sdk": "1.0.2"
+    "tucker-and-nielsen-plc/colorado-booth-sdk": "1.0.3"
 }
 ```
 
 You can also view the package at:
-https://packagist.org/packages/tucker-and-nielsen-plc/colorado-booth-sdk#1.0.2
+https://packagist.org/packages/tucker-and-nielsen-plc/colorado-booth-sdk#1.0.3
 
 ## Test the SDK
 
@@ -35,7 +35,7 @@ You can change the PHPUnit test configuration in the `phpunit.xml` file.
 
 ## Initialize the API Client
 
-**_Note:_** Documentation for the client can be found [here.](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/client.md)
+**_Note:_** Documentation for the client can be found [here.](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/client.md)
 
 The following parameters are configurable for the API Client:
 
@@ -44,7 +44,7 @@ The following parameters are configurable for the API Client:
 | accessToken2 | `string` |  |
 | port | `string` | *Default*: `'80'` |
 | suites | `int(SuiteCodeEnum)` | *Default*: `SuiteCodeEnum::HEARTS` |
-| environment | [`Environment`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/README.md#environments) | The API environment. <br> **Default: `Environment.TESTING`** |
+| environment | [`Environment`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/README.md#environments) | The API environment. <br> **Default: `Environment.TESTING`** |
 | timeout | `int` | Timeout for API calls in seconds.<br>*Default*: `0` |
 | enableRetries | `bool` | Whether to enable retries and backoff feature.<br>*Default*: `false` |
 | numberOfRetries | `int` | The number of retries to make.<br>*Default*: `0` |
@@ -54,14 +54,14 @@ The following parameters are configurable for the API Client:
 | retryOnTimeout | `bool` | Whether to retry on request timeout.<br>*Default*: `true` |
 | httpStatusCodesToRetry | `array` | Http status codes to retry against.<br>*Default*: `408, 413, 429, 500, 502, 503, 504, 521, 522, 524` |
 | httpMethodsToRetry | `array` | Http methods to retry against.<br>*Default*: `'GET', 'PUT'` |
-| proxyConfiguration | [`ProxyConfigurationBuilder`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/proxy-configuration-builder.md) | Represents the proxy configurations for API calls |
-| basicAuthCredentials | [`BasicAuthCredentials`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/auth/basic-authentication.md) | The Credentials Setter for Basic Authentication |
-| apiKeyCredentials | [`ApiKeyCredentials`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/auth/custom-query-parameter.md) | The Credentials Setter for Custom Query Parameter |
-| apiHeaderCredentials | [`ApiHeaderCredentials`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/auth/custom-header-signature.md) | The Credentials Setter for Custom Header Signature |
-| oAuthCCGCredentials | [`OAuthCCGCredentials`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/auth/oauth-2-client-credentials-grant.md) | The Credentials Setter for OAuth 2 Client Credentials Grant |
-| oAuthACGCredentials | [`OAuthACGCredentials`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/auth/oauth-2-authorization-code-grant.md) | The Credentials Setter for OAuth 2 Authorization Code Grant |
-| oAuthROPCGCredentials | [`OAuthROPCGCredentials`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/auth/oauth-2-resource-owner-credentials-grant.md) | The Credentials Setter for OAuth 2 Resource Owner Credentials Grant |
-| oAuthBearerTokenCredentials | [`OAuthBearerTokenCredentials`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/auth/oauth-2-bearer-token.md) | The Credentials Setter for OAuth 2 Bearer token |
+| proxyConfiguration | [`ProxyConfigurationBuilder`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/proxy-configuration-builder.md) | Represents the proxy configurations for API calls |
+| basicAuthCredentials | [`BasicAuthCredentials`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/auth/basic-authentication.md) | The Credentials Setter for Basic Authentication |
+| apiKeyCredentials | [`ApiKeyCredentials`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/auth/custom-query-parameter.md) | The Credentials Setter for Custom Query Parameter |
+| apiHeaderCredentials | [`ApiHeaderCredentials`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/auth/custom-header-signature.md) | The Credentials Setter for Custom Header Signature |
+| oAuthCCGCredentials | [`OAuthCCGCredentials`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/auth/oauth-2-client-credentials-grant.md) | The Credentials Setter for OAuth 2 Client Credentials Grant |
+| oAuthACGCredentials | [`OAuthACGCredentials`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/auth/oauth-2-authorization-code-grant.md) | The Credentials Setter for OAuth 2 Authorization Code Grant |
+| oAuthROPCGCredentials | [`OAuthROPCGCredentials`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/auth/oauth-2-resource-owner-credentials-grant.md) | The Credentials Setter for OAuth 2 Resource Owner Credentials Grant |
+| oAuthBearerTokenCredentials | [`OAuthBearerTokenCredentials`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/auth/oauth-2-bearer-token.md) | The Credentials Setter for OAuth 2 Bearer token |
 
 The API client can be initialized as follows:
 
@@ -150,31 +150,31 @@ The SDK can be configured to use a different environment for making API calls. A
 
 This API uses the following authentication schemes.
 
-* [`basicAuth (Basic Authentication)`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/auth/basic-authentication.md)
-* [`apiKey (Custom Query Parameter)`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/auth/custom-query-parameter.md)
-* [`apiHeader (Custom Header Signature)`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/auth/custom-header-signature.md)
-* [`OAuthCCG (OAuth 2 Client Credentials Grant)`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/auth/oauth-2-client-credentials-grant.md)
-* [`OAuthACG (OAuth 2 Authorization Code Grant)`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/auth/oauth-2-authorization-code-grant.md)
-* [`OAuthROPCG (OAuth 2 Resource Owner Credentials Grant)`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/auth/oauth-2-resource-owner-credentials-grant.md)
-* [`OAuthBearerToken (OAuth 2 Bearer token)`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/auth/oauth-2-bearer-token.md)
+* [`basicAuth (Basic Authentication)`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/auth/basic-authentication.md)
+* [`apiKey (Custom Query Parameter)`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/auth/custom-query-parameter.md)
+* [`apiHeader (Custom Header Signature)`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/auth/custom-header-signature.md)
+* [`OAuthCCG (OAuth 2 Client Credentials Grant)`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/auth/oauth-2-client-credentials-grant.md)
+* [`OAuthACG (OAuth 2 Authorization Code Grant)`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/auth/oauth-2-authorization-code-grant.md)
+* [`OAuthROPCG (OAuth 2 Resource Owner Credentials Grant)`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/auth/oauth-2-resource-owner-credentials-grant.md)
+* [`OAuthBearerToken (OAuth 2 Bearer token)`](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/auth/oauth-2-bearer-token.md)
 * `CustomAuth (Custom Authentication)`
 
 ## List of APIs
 
-* [Authentication](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/controllers/authentication.md)
+* [Authentication](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/controllers/authentication.md)
 
 ## SDK Infrastructure
 
 ### Configuration
 
-* [ProxyConfigurationBuilder](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/proxy-configuration-builder.md)
+* [ProxyConfigurationBuilder](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/proxy-configuration-builder.md)
 
 ### HTTP
 
-* [HttpRequest](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/http-request.md)
-* [HttpResponse](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/http-response.md)
+* [HttpRequest](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/http-request.md)
+* [HttpResponse](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/http-response.md)
 
 ### Utilities
 
-* [ApiException](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.2/doc/api-exception.md)
+* [ApiException](https://www.github.com/ZahraN444/colorado-booth-php-sdk/tree/1.0.3/doc/api-exception.md)
 
